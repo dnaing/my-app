@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 
 
@@ -10,11 +11,14 @@ import "./fonts/FranklinGothic.otf";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Navbar/> */}
-      {/* <span className="heading"> star wars compendium </span>
-      <span className="body"> Hello, welcome to the Star Wars Compendium. </span> */} 
-    </div>
+    <div>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/'/>
+        </Routes>
+      </Router>
+    </div> 
   );
 }
 
