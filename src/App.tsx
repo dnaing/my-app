@@ -1,6 +1,15 @@
 import React from 'react';
-import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Pages/Home";
+import Films from './components/Pages/Films';
+import People from './components/Pages/People';
+import Species from './components/Pages/Species';
+import Planets from './components/Pages/Planets';
+import Starships from './components/Pages/Starships';
+import Vehicles from './components/Pages/Vehicles';
+
 import './App.css';
 
 
@@ -14,9 +23,15 @@ function App() {
     <div>
       <Router>
         <Navbar/>
-        {/* <Routes>
-          <Route path='/'/>
-        </Routes> */}
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/films' element={<Films/>} />
+          <Route path='/people' element={<People/>} />
+          <Route path='/species' element={<Species/>} />
+          <Route path='/planets' element={<Planets/>} />
+          <Route path='/starships' element={<Starships/>} />
+          <Route path='/vehicles' element={<Vehicles/>} />
+        </Routes>
       </Router>
     </div> 
   );
