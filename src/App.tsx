@@ -14,9 +14,9 @@ function App() {
     <div>
       <Router>
         <Navbar/>
-        <Routes>
+        {/* <Routes>
           <Route path='/'/>
-        </Routes>
+        </Routes> */}
       </Router>
     </div> 
   );
