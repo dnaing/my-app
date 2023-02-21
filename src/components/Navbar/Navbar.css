@@ -46,7 +46,7 @@
     text-align: center;
     width: 80vw;
     justify-content: end;
-    margin-right: -10rem;
+    margin-left: 15rem;
   }
   
   .nav-item {
@@ -94,6 +94,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      margin-left: 0rem;
     }
   
     .nav-menu.active {
