@@ -2,13 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Pages/Home";
+import Home from "./components/Pages/Home/Home";
 import Films from './components/Pages/Films';
 import People from './components/Pages/People';
 import Species from './components/Pages/Species';
 import Planets from './components/Pages/Planets';
 import Starships from './components/Pages/Starships';
 import Vehicles from './components/Pages/Vehicles';
+
 
 import './App.css';
 
@@ -34,6 +35,7 @@ function App() {
         </Routes>
       </Router>
     </div> 
+    
   );
 }
 

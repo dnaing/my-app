@@ -23,7 +23,7 @@ function NavBar() {
   window.addEventListener('resize', showButton);
 
   return (
-    <>
+    <div className='overarching-container'>
       <nav className='navbar'>
         <div className='navbar-container'>
 
@@ -80,7 +80,7 @@ function NavBar() {
           {/* {button & <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
-    </>
+    </div>
 
   )
 }
